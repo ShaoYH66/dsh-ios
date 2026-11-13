@@ -1,11 +1,11 @@
-﻿name: build-ipa
+name: build-ipa
 
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-latest
     timeout-minutes: 180
     steps:
       - name: Checkout
