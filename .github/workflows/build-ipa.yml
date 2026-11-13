@@ -1,4 +1,4 @@
-name: build-ipa
+﻿name: build-ipa
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ jobs:
       - name: Install deps
         run: |
           set -e
-          brew install meson ninja lld
+          brew install meson ninja lld libarchive
           brew install node@20 || true
           gem install xcodeproj --no-document
           node -v || true
